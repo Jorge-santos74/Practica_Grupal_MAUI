@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Practica_Grupal_MAUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+3699182536f9c0a2b180d1fe8dba22fc81f84da2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+e6150f5debb1cddbfb9c739fbfe50906a2d0d692")]
 [assembly: System.Reflection.AssemblyProductAttribute("Practica_Grupal_MAUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Practica_Grupal_MAUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

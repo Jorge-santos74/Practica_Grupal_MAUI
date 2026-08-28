@@ -28989,24 +28989,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jorge Santos\\.nuget\\packages\\": {},
+    "C:\\Users\\aldah\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jorge Santos\\source\\repos\\Practica_Grupal_MAUI\\Practica_Grupal_MAUI\\Practica_Grupal_MAUI\\Practica_Grupal_MAUI.csproj",
+      "projectUniqueName": "C:\\Users\\aldah\\OneDrive\\Desktop\\Profe Arcides\\Practica 10\\Practica_Grupal_MAUI\\Practica_Grupal_MAUI\\Practica_Grupal_MAUI\\Practica_Grupal_MAUI.csproj",
       "projectName": "Practica_Grupal_MAUI",
-      "projectPath": "C:\\Users\\Jorge Santos\\source\\repos\\Practica_Grupal_MAUI\\Practica_Grupal_MAUI\\Practica_Grupal_MAUI\\Practica_Grupal_MAUI.csproj",
-      "packagesPath": "C:\\Users\\Jorge Santos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jorge Santos\\source\\repos\\Practica_Grupal_MAUI\\Practica_Grupal_MAUI\\Practica_Grupal_MAUI\\obj\\",
+      "projectPath": "C:\\Users\\aldah\\OneDrive\\Desktop\\Profe Arcides\\Practica 10\\Practica_Grupal_MAUI\\Practica_Grupal_MAUI\\Practica_Grupal_MAUI\\Practica_Grupal_MAUI.csproj",
+      "packagesPath": "C:\\Users\\aldah\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\aldah\\OneDrive\\Desktop\\Profe Arcides\\Practica 10\\Practica_Grupal_MAUI\\Practica_Grupal_MAUI\\Practica_Grupal_MAUI\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Jorge Santos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\aldah\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
