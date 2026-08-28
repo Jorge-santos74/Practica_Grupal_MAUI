@@ -77,6 +77,9 @@
 	  <MauiXaml Update="Views\Ejercicio4\Ejercicio4Page.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\Ejercicio5\Ejercicio5.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\Ejercicio6\ConversorPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -85,7 +88,6 @@
 	<ItemGroup>
 	  <Folder Include="Views\Ejercicio1\" />
 	  <Folder Include="Views\Ejercicio2\" />
-	  <Folder Include="Views\Ejercicio5\" />
 	</ItemGroup>
 
 </Project>

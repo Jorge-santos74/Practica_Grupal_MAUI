@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica_Grupal_MAUI.Views.Ejercicio5.Ejercicio5"
+             Title="La Langosta Ahumada"
+             BackgroundColor="#F5F5F5">
+
+    <ScrollView>
+
+        <VerticalStackLayout
+            Padding="30"
+            Spacing="20">
+
+            <!-- TÍTULO -->
+            <Label
+                Text="🦞 La Langosta Ahumada"
+                FontSize="30"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                TextColor="#8B0000" />
+
+            <Label
+                Text="Presupuesto para banquetes"
+                FontSize="18"
+                HorizontalOptions="Center"
+                TextColor="#555555" />
+
+            <!-- TARJETA PRINCIPAL -->
+            <Border
+                BackgroundColor="White"
+                Stroke="#8B0000"
+                StrokeThickness="2"
+                StrokeShape="RoundRectangle 15"
+                Padding="20">
+
+                <VerticalStackLayout
+                    Spacing="15">
+
+                    <Label
+                        Text="Número de personas"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center" />
+
+                    <Entry
+                        x:Name="txtPersonas"
+                        Placeholder="Ingrese cantidad"
+                        Keyboard="Numeric"
+                        FontSize="22"
+                        HorizontalTextAlignment="Center" />
+
+                    <Button
+                        x:Name="btnCalcular"
+                        Text="CALCULAR PRESUPUESTO"
+                        FontSize="17"
+                        FontAttributes="Bold"
+                        BackgroundColor="#8B0000"
+                        TextColor="White"
+                        CornerRadius="10"
+                        HeightRequest="55"
+                        Clicked="btnCalcular_Clicked" />
+
+                </VerticalStackLayout>
+
+            </Border>
+
+
+            <!-- RESULTADO -->
+            <Border
+                BackgroundColor="#FFF8E1"
+                Stroke="#D4A017"
+                StrokeThickness="2"
+                StrokeShape="RoundRectangle 15"
+                Padding="20">
+
+                <VerticalStackLayout
+                    Spacing="12">
+
+                    <Label
+                        Text="RESULTADO"
+                        FontSize="22"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                        TextColor="#8B0000" />
+
+                    <Label
+                        Text="Personas:"
+                        FontSize="17" />
+
+                    <Label
+                        x:Name="lblCantidad"
+                        Text="0"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center" />
+
+                    <Label
+                        Text="Costo por persona:"
+                        FontSize="17" />
+
+                    <Label
+                        x:Name="lblPrecio"
+                        Text="$0.00"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center" />
+
+                    <BoxView
+                        HeightRequest="1"
+                        BackgroundColor="#CCCCCC" />
+
+                    <Label
+                        Text="PRESUPUESTO TOTAL"
+                        FontSize="19"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center" />
+
+                    <Label
+                        x:Name="lblTotal"
+                        Text="$0.00"
+                        FontSize="32"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                        TextColor="#8B0000" />
+
+                </VerticalStackLayout>
+
+            </Border>
+
+
+            <!-- TARIFAS -->
+            <Label
+                Text="Tarifas"
+                FontSize="22"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                TextColor="#333333" />
+
+            <VerticalStackLayout
+                Spacing="8">
+
+                <Label
+                    Text="👥 Hasta 200 personas → $95.00 por persona"
+                    FontSize="16" />
+
+                <Label
+                    Text="👥 De 201 a 300 personas → $85.00 por persona"
+                    FontSize="16" />
+
+                <Label
+                    Text="👥 Más de 300 personas → $75.00 por persona"
+                    FontSize="16" />
+
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>
