@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica_Grupal_MAUI.Views.Ejercicio6.ConversorPage"
+             Title="Ejercicio 6 - Conversor MXN a USD"
+             BackgroundColor="#F3F4F6">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15" MaximumWidthRequest="450">
+
+            <!-- Título Principal -->
+            <Label Text="Conversor de Pesos Mexicanos a Dólares"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   TextColor="#111827"
+                   HorizontalOptions="Center"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,10,0,5" />
+
+            <!-- Card del Formulario -->
+            <Border StrokeShape="RoundRectangle 12" 
+                    Stroke="#E5E7EB" 
+                    BackgroundColor="#FFFFFF" 
+                    Padding="20">
+
+                <VerticalStackLayout Spacing="15">
+
+                    
+                    <VerticalStackLayout Spacing="5">
+                        <Label Text="Monto en Pesos Mexicanos (MXN):" 
+                               FontSize="14" 
+                               FontAttributes="Bold"
+                               TextColor="#374151" />
+                        <Entry x:Name="EntryPesos"
+                               Placeholder="Ej. 1000.00"
+                               PlaceholderColor="#9CA3AF"
+                               TextColor="#111827"
+                               BackgroundColor="#F9FAFB"
+                               Keyboard="Numeric"
+                               ReturnType="Next"
+                               ClearButtonVisibility="WhileEditing" />
+                    </VerticalStackLayout>
+
+                    
+                    <VerticalStackLayout Spacing="5">
+                        <Label Text="Tipo de cambio (Precio de 1 USD en MXN):" 
+                               FontSize="14" 
+                               FontAttributes="Bold"
+                               TextColor="#374151" />
+                        <Entry x:Name="EntryTasa"
+                               Text="18.50"
+                               Placeholder="Ej. 18.50"
+                               PlaceholderColor="#9CA3AF"
+                               TextColor="#111827"
+                               BackgroundColor="#F9FAFB"
+                               Keyboard="Numeric"
+                               ReturnType="Done"
+                               ClearButtonVisibility="WhileEditing" />
+                    </VerticalStackLayout>
+
+                    <!-- Botones -->
+                    <Grid ColumnDefinitions="*, *" ColumnSpacing="10" Margin="0,5,0,0">
+                        <Button Grid.Column="0"
+                                Text="Calcular"
+                                Clicked="OnCalcularClicked"
+                                BackgroundColor="#2563EB"
+                                TextColor="#FFFFFF"
+                                FontAttributes="Bold"
+                                CornerRadius="8" />
+
+                        <Button Grid.Column="1"
+                                Text="Limpiar"
+                                Clicked="OnLimpiarClicked"
+                                BackgroundColor="#E5E7EB"
+                                TextColor="#1F2937"
+                                FontAttributes="Bold"
+                                CornerRadius="8" />
+                    </Grid>
+
+                </VerticalStackLayout>
+            </Border>
+
+            
+            <Border x:Name="BorderResultado"
+                    StrokeShape="RoundRectangle 12"
+                    Stroke="#22C55E"
+                    BackgroundColor="#F0FDF4"
+                    Padding="20">
+                <VerticalStackLayout Spacing="6">
+                    <Label Text="RESULTADO EN DÓLARES"
+                           FontSize="11"
+                           FontAttributes="Bold"
+                           TextColor="#15803D"
+                           HorizontalOptions="Center" />
+
+                    <Label x:Name="LabelResultado"
+                           Text="$0.00 USD"
+                           FontSize="26"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           TextColor="#166534" />
+
+                    <BoxView HeightRequest="1" Color="#BBF7D0" Margin="0,4" />
+
+                    <Label x:Name="LabelDetalle"
+                           Text="Ingrese un monto para realizar el cálculo."
+                           FontSize="12"
+                           TextColor="#15803D"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center" />
+                </VerticalStackLayout>
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

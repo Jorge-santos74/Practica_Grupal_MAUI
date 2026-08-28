@@ -3,12 +3,30 @@
     x:Class="Practica_Grupal_MAUI.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:Practica_Grupal_MAUI"
-    Title="Practica_Grupal_MAUI">
+    xmlns:ej6="clr-namespace:Practica_Grupal_MAUI.Views.Ejercicio6"
+    Title="Práctica Grupal MAUI">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <!-- Menú desplegable con los 6 botones visibles -->
+    <FlyoutItem Title="Menú de Ejercicios">
+
+        <ShellContent Title="1. Números Pares (En desarrollo)" 
+                      ContentTemplate="{DataTemplate ej6:ConversorPage}" />
+
+        <ShellContent Title="2. Cuenta Regresiva (En desarrollo)" 
+                      ContentTemplate="{DataTemplate ej6:ConversorPage}" />
+
+        <ShellContent Title="3. Tablas Multiplicar (En desarrollo)" 
+                      ContentTemplate="{DataTemplate ej6:ConversorPage}" />
+
+        <ShellContent Title="4. Sueldo Semanal (En desarrollo)" 
+                      ContentTemplate="{DataTemplate ej6:ConversorPage}" />
+
+        <ShellContent Title="5. La Langosta Ahumada (En desarrollo)" 
+                      ContentTemplate="{DataTemplate ej6:ConversorPage}" />
+
+        <ShellContent Title="6. Conversor MXN a USD" 
+                      ContentTemplate="{DataTemplate ej6:ConversorPage}" />
+
+    </FlyoutItem>
 
 </Shell>
