@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica_Grupal_MAUI.Views.Ejercicio4.Ejercicio4Page"
+             Title="Cálculo de Sueldo Semanal">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+            <Label Text="Calculadora de Sueldo Semanal"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,10" />
+
+            <Entry x:Name="TxtHorasTrabajadas"
+                   Placeholder="Horas trabajadas en la semana"
+                   Keyboard="Numeric" />
+
+            <Entry x:Name="TxtPagoPorHora"
+                   Placeholder="Pago por hora ($)"
+                   Keyboard="Numeric" />
+
+            <Button Text="Calcular Sueldo"
+                    Clicked="OnCalcularClicked"
+                    Margin="0,10,0,0" />
+
+            <Border Stroke="LightGray"
+                    Padding="15"
+                    Margin="0,15,0,0">
+                <VerticalStackLayout Spacing="8">
+                    <Label x:Name="LblResultado"
+                           Text="Ingresa los datos para calcular el sueldo."
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center" />
+                </VerticalStackLayout>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
